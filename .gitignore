@@ -16,3 +16,9 @@ build/
 
 # macOS
 .DS_Store
+
+# ROMs — do not commit copyrighted game files
+emulator/roms/
+
+# Built wheel/sdist
+dist/
