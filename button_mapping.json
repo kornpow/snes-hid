@@ -1,0 +1,58 @@
+{
+  "buttons": {
+    "B": {
+      "byte": 5,
+      "bit": 6
+    },
+    "A": {
+      "byte": 5,
+      "bit": 5
+    },
+    "X": {
+      "byte": 5,
+      "bit": 4
+    },
+    "Y": {
+      "byte": 5,
+      "bit": 7
+    },
+    "L": {
+      "byte": 6,
+      "bit": 0
+    },
+    "R": {
+      "byte": 6,
+      "bit": 1
+    },
+    "Select": {
+      "byte": 6,
+      "bit": 4
+    },
+    "Start": {
+      "byte": 6,
+      "bit": 5
+    }
+  },
+  "dpad": {
+    "Up": {
+      "byte": 4,
+      "value": 0,
+      "baseline": 127
+    },
+    "Down": {
+      "byte": 4,
+      "value": 255,
+      "baseline": 127
+    },
+    "Left": {
+      "byte": 3,
+      "value": 0,
+      "baseline": 127
+    },
+    "Right": {
+      "byte": 3,
+      "value": 255,
+      "baseline": 127
+    }
+  }
+}
