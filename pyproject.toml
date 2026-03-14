@@ -1,7 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
-name = "snes-pi"
+name = "snes-hid"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
     "hidapi",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/snes_hid"]
+
+[project.scripts]
+snes-poll = "snes_hid.test_polling:main"
+snes-map  = "snes_hid.map_buttons:main"

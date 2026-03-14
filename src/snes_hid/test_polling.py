@@ -92,7 +92,7 @@ def poll_controller(num_reads=50, delay=0.1, continuous=False):
         return False
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(
         description="Poll a SNES USB controller and print button/D-pad events.",
     )
@@ -127,3 +127,7 @@ if __name__ == "__main__":
         continuous=args.continuous,
     )
     sys.exit(0 if success else 1)
+
+
+if __name__ == "__main__":
+    main()
