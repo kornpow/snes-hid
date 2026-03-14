@@ -1,0 +1,32 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: en_US.UTF-8
+  keyboard:
+    layout: us
+  identity:
+    hostname: snes-retro
+    username: skorn
+    # password: "samuel"
+    password: "$6$clf4zY.D0BhMzaif$aWKWHv9EhrQDmRGP07uByijRDrNbcMkIn8CQn4048Kql6fL9awdlBfI6tOu8aPTD0/JxffY0.ijfQ8EOpsMjc."
+  storage:
+    layout:
+      name: direct
+  network:
+    network:
+      version: 2
+      ethernets:
+        enp0s1:
+          dhcp4: true
+  packages:
+    - ubuntu-desktop
+    - retroarch
+    - retroarch-cores
+    - git
+    - python3-pip
+    - python3-venv
+  late-commands:
+    - systemctl enable gdm3
+  ssh:
+    install-server: true
+    allow-pw: true

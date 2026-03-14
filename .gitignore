@@ -20,5 +20,6 @@ build/
 # ROMs — do not commit copyrighted game files
 emulator/roms/
 
-# Built wheel/sdist
-dist/
+# VM images — too large for git
+emulator/vm/*.iso
+emulator/vm/seed/
